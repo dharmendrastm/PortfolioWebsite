@@ -1,62 +1,84 @@
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flex-1 {
-    flex: 1;
+  flex: 1;
 }
 
 .btn {
-    padding: 0.9rem 3rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 2px solid transparent;
-    outline: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding: 0.9rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 1;
 }
 
+/* 🔥 Gradient + Primary Button */
 .btn-primary {
-    background: var(--primary);
-    color: var(--secondary);
+  background: linear-gradient(135deg, var(--primary), #00c6ff);
+  color: var(--secondary);
+  border: none;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    transparent,
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: rotate(25deg);
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.btn-primary:hover::before {
+  top: -50%;
 }
 
 .btn-primary:hover {
-    background: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.25);
 }
 
+/* 🔥 Secondary Button - Glass Effect */
 .btn-secondary {
-    background: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  backdrop-filter: blur(6px);
 }
 
 .btn-secondary:hover {
-    background: var(--primary);
-    color: var(--secondary);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.15);
+  background: var(--primary);
+  color: var(--secondary);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
 }
