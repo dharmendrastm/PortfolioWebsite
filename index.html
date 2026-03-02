@@ -1,370 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dharmendra Kumar | Cybersecurity Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Cybersecurity portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="Images/hamberger.svg" alt="">
+        </button>
 
-<div class="site-main-wrapper">
+        <div class="mobile-nav">
+            <button class="times"><img src="Images/times.svg" alt=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="Images/Dharmendra_resume (2).pdf" download="Dharmendra_resume">Resume</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="Images/logo.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#work">Work</a>
+                            <a href="#blog">Blog</a>
+                            <a href="Images/Dharmendra_resume (2).pdf" download="Dharmendra_resume">Resume</a>
+                            <a href="#project">Project</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#contact">
+                            <button class="btn btn-primary">Contact</button>
+                        </a> 
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="Images/Myphoto1.png" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Dharmendra Kumar </h6>
+                        <h1>I’m a Cyber Security <span>Engineer</span></h1>
+                        <p>I am a passionate Cybersecurity student, eager to utilize my skills and knowledge to help organizations protect their critical assets from evolving threats. With a strong foundation in network security and risk assessment, I am well-equipped to contribute to a team's mission of securing digital infrastructures. I am always seeking new learning opportunities and staying up-to-date with the latest industry trends to enhance my abilities.</p>
+                        <div>
+                            <a href="Images/Dharmendra_resume (2).pdf" download="Dharmendra_resume">
+                                <button class="btn btn-secondary">DOWNLOAD CV</button>
+                            </a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<button class="hamberger">
-<img src="Images/hamberger.svg">
-</button>
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="Images/MyPhoto.jpg" alt="">
+                </div>
+                <div class="flex-1 right">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! i’m Dharmendra Kumar.</h3>
+                    <p>Welcome to my portfolio!
+💬 “Hello Member”
+Hi, I’m Dharmendra Kumar (also known as dharmendrastm), a cybersecurity enthusiast, junior penetration tester, and ethical hacker. I am eJPT v2 certified and actively involved in vulnerability assessment and penetration testing (VAPT), with a strong focus on web application security. I continuously sharpen my skills by working on real-world attack scenarios and participating in Capture The Flag (CTF) challenges.
 
-<div class="mobile-nav">
+My work and learning journey revolve around identifying security weaknesses, testing defenses, and helping organizations improve their security posture. I have hands-on experience with tools such as Burp Suite, Nmap, Metasploit, OWASP Top 10, and Wireshark, along with proficiency in Python and C for automation and exploit development.
 
-<button class="times">
-<img src="Images/times.svg">
-</button>
+Recently, I was recognized in the Hall of Fame by Dreamscape via Bugcrowd for responsible vulnerability disclosure and real-world security contributions.
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#work">Work</a></li>
-<li><a href="#blog">Blog</a></li>
-<li><a href="#Project">Project</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+Cybersecurity is more than just a career path for me — it’s a passion. As dharmendra, I’m constantly learning, experimenting, and pushing my technical limits to make the digital world safer.
 
-</div>
+I am deeply passionate about ethical hacking, penetration testing, bug bounty hunting, and continuous learning. I actively participate in CTF platforms like Hack The Box (HTB) and TryHackMe (THM) to strengthen my practical skills and stay updated with modern attack techniques.
 
+I love solving complex security problems, learning new technologies, and collaborating with the cybersecurity community. Let’s connect and work together to build a safer internet. 🔐</p>
+                    <div class="social">
+                <a href="https://github.com/Dharmendrastm"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073487926573"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/DHARMEN75705829"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/dharmendra-kumar-432aa0291/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/dharmendra_stm/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span>Services</h1>
+                <p>We deliver top-tier security solutions to safeguard your company</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="Images/Web Pentesting.png" alt="">
+                        <h2>Web Pentesting</h2>
+                        <p>Web application penetration testing (pentesting) is a simulated attack on a web application to uncover security vulnerabilities before malicious actors can exploit them.
+                             This proactive approach helps organizations identify weaknesses, protect sensitive data, and ensure business continuity.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/IoT Pentesting.png" alt="">
+                        <h2>IoT Pentesting</h2>
+                        <p>Internet of Things (IoT) penetration testing is a security evaluation process that involves simulating attacks on IoT devices and systems to identify vulnerabilities and weaknesses. As IoT devices become increasingly prevalent in both consumer and industrial applications, 
+                            their security has become a critical concern. IoT pentesting helps organizations uncover potential security issues before malicious actors can exploit them
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/Network Pentesting..png" alt="">
+                        <h2>Network Pentesting</h2>
+                        <p>Network penetration testing, or pen testing, is a cybersecurity practice that involves simulating cyberattacks on a network
+                             to identify potential vulnerabilities. The goal of network penetration testing is to find and fix security gaps before a real attack occurs
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/Android Pentesting.png" alt="">
+                        <h2>Android Penetrating</h2>
+                        <p>Android Penetration Testing is the process of assessing the security posture of Android 
+                            applications and devices to identify vulnerabilities that could be exploited by malicious attackers. </p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/Security Awareness Training.png" alt="">
+                        <h2>Security Training & Awareness</h2>
+                        <p>Security training and awareness involve educating employees and stakeholders about cybersecurity risks and best practices to enhance an
+                             organization's overall security posture. The goal is to build a culture of security where everyone is informed and vigilant against potential threats.</p>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/Vulnerability Assessment.png" alt="">
+                        <h2>Vulnerability Assessment</h2>
+                        <p>Vulnerability assessment is a systematic process used to identify, evaluate, and prioritize vulnerabilities within an organization’s IT infrastructure. 
+                            The aim is to uncover weaknesses that could be exploited by attackers, allowing for timely remediation and enhanced security.
+                        </p>
+                    </div>
 
-<header>
+                </div>
+            </div>
+        </section>
+        <section class="freelancer">
+            <h1>I Am Available For Freelancer.</h1>
+            <p>We deliver top-tier security solutions to safeguard your company</p>
+            <a href="Images/Dharmendra_resume (2).pdf" download="Dharmendra_resume">
+                <button class="btn btn-secondary">DOWNLOAD CV</button>
+            </a>  
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Client</h1>
+                <p>We deliver top-tier security solutions to safeguard your company</p>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="Images/lady.png" alt="">
+                        <p>Tech Solutions delivered a highly successful project, meeting all the client’s key objectives. Their proactive approach, technical expertise, 
+                            and commitment to customer satisfaction have made them a trusted partner for GreenTech Innovations.</p>
+                        <span>- Client Name, Company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="Images/lady.png" alt="">
+                        <p>Tech Solutions delivered a highly successful project, meeting all the client’s key objectives. Their proactive approach, technical expertise, 
+                            and commitment to customer satisfaction have made them a trusted partner for GreenTech Innovations.</p>
+                        <span>- Client Name, Company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="Images/lady.png" alt="">
+                        <p>Tech Solutions delivered a highly successful project, meeting all the client’s key objectives. Their proactive approach, 
+                            technical expertise, and commitment to customer satisfaction have made them a trusted partner for GreenTech Innovations.</p>
+                        <span>- Client Name, Company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="Images/lady.png" alt="">
+                        <p>Tech Solutions delivered a highly successful project, meeting all the client’s key objectives. Their proactive 
+                            approach, technical expertise, and commitment to customer satisfaction have made them a trusted partner for GreenTech Innovations.</p>
+                        <span>- Client Name, Company ABC</span>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
 
-<div class="container">
+        <section id="work" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Works</h1>
+                <p>We deliver top-tier security solutions to safeguard your company</p>
 
-<nav id="main-nav" class="flex items-center justify-between">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Cybersecurity</a>
+                        </div>
+                        <img src="Images/Work png 1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Cybersecurity</a>
+                        </div>
+                        <img src="Images/Work png 1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Cybersecurity</a>
+                        </div>
+                        <img src="Images/Work png 1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">InternetSecurity</a>
+                        </div>
+                        <img src="Images/Work png2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">InternetSecurity</a>
+                        </div>
+                        <img src="Images/Work png2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">InternetSecurity</a>
+                        </div>
+                        <img src="Images/Work png2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Blog</h1>
+                <p>We deliver top-tier security solutions to safeguard your company</p>
 
-<div class="left flex items-center">
-
-<div class="branding">
-<img src="Images/logo.svg">
-</div>
-
-<div class="desktop-menu">
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#work">Work</a>
-<a href="#blog">Blog</a>
-<a href="#Project">Project</a>
-</div>
-
-</div>
-
-<div class="right">
-<a href="#contact">
-<button class="btn btn-primary">Contact</button>
-</a>
-</div>
-
-</nav>
-
-
-<div class="hero flex items-center justify-between">
-
-<div class="left flex-1 flex justify-center">
-<img src="Images/Myphoto1.png">
-</div>
-
-<div class="right flex-1">
-
-<h6>Dharmendra Kumar</h6>
-
-<h1>I’m a Cyber Security <span>Engineer</span></h1>
-
-<p>
-Cybersecurity enthusiast, penetration tester and ethical hacker.
-Focused on web application security, vulnerability assessment and real world attack simulations.
-</p>
-
-<a href="Images/Dharmendra_resume (2).pdf" download>
-<button class="btn btn-secondary">DOWNLOAD CV</button>
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</header>
-
-
-<section id="about" class="about">
-
-<div class="container about-inner-wrap">
-
-<div class="flex-1">
-<img class="about-me-img" src="Images/MyPhoto.jpg">
-</div>
-
-<div class="flex-1 right">
-
-<h1>About <span>Me</span></h1>
-
-<h3>Hello! I'm Dharmendra Kumar</h3>
-
-<p>
-I am a cybersecurity enthusiast and junior penetration tester with experience in vulnerability assessment, web security and ethical hacking.
-</p>
-
-<div class="social">
-
-<a href="https://github.com/Dharmendrastm"><i class="fab fa-github"></i></a>
-
-<a href="https://www.linkedin.com/in/dharmendra-kumar-432aa0291/"><i class="fab fa-linkedin"></i></a>
-
-<a href="https://www.instagram.com/dharmendra_stm/"><i class="fab fa-instagram"></i></a>
-
-<a href="https://x.com/DHARMEN75705829"><i class="fab fa-twitter"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="Images/The Importance of Secure Coding Practices in Cybersecurity.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="Bloga.html">
+                                <h1>The Importance of Secure Coding Practices in Cybersecurity</h1>
+                            </a>
+                            <span>Sept 17, 2024</span>
+                            <p>As the digital world continues to expand, 
+                            the importance of secure coding practices cannot be overstated. Developers are the first line of defense against cyber threats,
+                             and the code they write can either make systems vulnerable or secure. Insecure code can lead to catastrophic breaches, data leaks, and 
+                             financial losses.</p>
+                            <a href="Bloga.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="Images/Understanding the Latest Cyber Threats and Attack.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="Blogb.html">
+                                <h1> Understanding the Latest Cyber Threats and Attacks</h1>
+                            </a>
+                            <span>Sept 16, 2024</span>
+                            <p>Cyber threats are constantly evolving, and staying ahead of attackers is a significant challenge for businesses and individuals alike. 
+                                From ransomware to Advanced Persistent Threats (APTs), understanding the landscape of cyber threats is crucial for building effective defenses.</p>
+                            <a href="Blogb.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="Images/A Beginner’s Guide to Ethical Hacking and Penetration Testing.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="Blogc.html">
+                                <h1>A Beginner’s Guide to Ethical Hacking and Penetration Testing</h1>
+                            </a>
+                            <span>Sept 16, 2024</span>
+                            <p>Ethical hacking, or penetration testing, involves simulating cyberattacks on systems, networks, or applications to identify vulnerabilities before malicious hackers can exploit them.
+                                 It's an essential part of the cybersecurity landscape and helps organizations protect their digital assets.</p>
+                            <a href="Blogc.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- Projects Section -->
+  <section id="project" class="Project">
+    <div class="container">
+        <h1 class="section-heading"><span>My</span> Project</h1>
+        <p>We deliver top-tier security solutions to safeguard your company</p>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Images/Real-Time IoT Device Security Monitoring.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Real-Time IoT Device Security Monitoring</h3>
+                    <p>I built a smart system that watches over Internet of Things (IoT) devices (like smart bulbs or cameras) and alerts users if anything suspicious happens — like unexpected network activity. It works in real time and even shows live alerts on a dashboard so people can take action immediately.</p>
+                </div>
+            </div>            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Images/Bug Bounty Recon Automation Tool.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Bug Bounty Recon Automation Tool</h3>
+                    <p>I created a tool that helps ethical hackers find vulnerabilities on websites faster. It automates the process of collecting information about a target (like subdomains, hidden files, and endpoints), which is the first and most important step in ethical hacking and bug hunting.</p>
+                </div>
+            </div>            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Images/Web Application Vulnerability Scanner.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Web Application Vulnerability Scanner</h3>
+                    <p>I created a tool that scans websites to find common security weaknesses like SQL Injection and Cross-Site Scripting (XSS). It helps developers secure their web apps by pointing out the risky areas before hackers can find them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-
-<section id="services" class="services">
-
-<div class="container">
-
-<h1 class="section-heading"><span>My</span> Services</h1>
-
-<div class="card-wrapper">
-
-
-<div class="card">
-
-<img src="Images/Web Pentesting.png">
-
-<h2>Web Pentesting</h2>
-
-<p>
-Identify vulnerabilities in web applications including SQL Injection, XSS and misconfigurations.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<img src="Images/Network Pentesting..png">
-
-<h2>Network Pentesting</h2>
-
-<p>
-Simulated attacks to detect vulnerabilities in enterprise networks.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<img src="Images/Android Pentesting.png">
-
-<h2>Android Security Testing</h2>
-
-<p>
-Security testing of Android applications to detect vulnerabilities.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="reviews">
-
-<div class="container">
-
-<h1 class="section-heading"><span>Client</span> Reviews</h1>
-
-<div class="slider">
-
-
-<div class="slide">
-
-<img src="Images/lady.png">
-
-<p>
-Great cybersecurity professional. Helped us identify multiple vulnerabilities.
-</p>
-
-<span>- Client</span>
-
-</div>
-
-
-<div class="slide">
-
-<img src="Images/lady.png">
-
-<p>
-Excellent penetration testing services and detailed reports.
-</p>
-
-<span>- Client</span>
-
-</div>
-
-
-</div>
-
-<div class="slider-dots"></div>
-
-</div>
-
-</section>
-
-
-
-<section id="Project" class="Project">
-
-<div class="container">
-
-<h1 class="section-heading"><span>My</span> Projects</h1>
-
-<div class="projects-grid">
-
-
-<div class="project-card">
-
-<img src="Images/Web Application Vulnerability Scanner.png">
-
-<h3>Web Vulnerability Scanner</h3>
-
-<p>
-Scanner to detect SQL injection and XSS vulnerabilities.
-</p>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="Images/Bug Bounty Recon Automation Tool.png">
-
-<h3>Bug Bounty Recon Tool</h3>
-
-<p>
-Automation tool for subdomain and endpoint discovery.
-</p>
-
-</div>
-
-
-<div class="project-card">
-
-<img src="Images/Real-Time IoT Device Security Monitoring.png">
-
-<h3>IoT Security Monitoring</h3>
-
-<p>
-Real time monitoring system for IoT device traffic.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h1 class="section-heading">Contact <span>Me</span></h1>
-
-<form>
-
-<div class="input-wrap">
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-</div>
-
-
-<textarea placeholder="Your Message"></textarea>
-
-<div class="btn-wrapper">
-
-<button class="btn btn-primary">Send Message</button>
-
-</div>
-
-</form>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<img class="footer-logo" src="Images/logo-2.svg">
-
-<div class="footer-socials">
-
-<a href="https://github.com/Dharmendrastm"><i class="fab fa-github"></i></a>
-
-<a href="https://www.linkedin.com/in/dharmendra-kumar-432aa0291/"><i class="fab fa-linkedin"></i></a>
-
-<a href="https://www.instagram.com/dharmendra_stm/"><i class="fab fa-instagram"></i></a>
-
-</div>
-
-<div class="copyright">
-
-Copyright © 2026 Dharmendra Kumar
-
-</div>
-
-</footer>
-
-</div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script src="js/app.js"></script>
-
-
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Us</span></h1>
+                <p>We deliver top-tier security solutions to safeguard your company</p>
+                <div class="card-wrapper">
+                   <div class="card">
+                        <i class="fas fa-phone fa-3x" style="color: #3498db;"></i>
+                        <h1>Call Us On</h1>
+                        <h6>N/A</h6>
+                    </div>
+                    <div class="card">
+                         <i class="fas fa-envelope fa-3x" style="color: #e67e22;"></i>
+                         <h1>Email Us At</h1>
+                         <h6>N/A</h6>
+                </div>
+                <div class="card">
+                     <i class="fas fa-map-marker-alt fa-3x" style="color: #2ecc71;"></i>
+                     <h1>Visit Office</h1>
+                     <h6>Only Virtual</h6>
+                   </div>
+                </div>
+                <form action="">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Your Name *">
+                        <input type="email" placeholder="Your Email *">
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" placeholder="Your Subject...">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <img class="footer-logo" src="Images/logo-2.svg" alt="">
+            <div class="footer-socials">
+                 <a href="https://github.com/Dharmendrastm"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073487926573"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/DHARMEN75705829"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/dharmendra-kumar-432aa0291/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/dharmendra_stm/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                Copyright 2024 © Dharmendrstm
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 </html>
